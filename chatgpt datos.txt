@@ -1,0 +1,27 @@
+Para los siguientes pares id-descripciones de viviendas de alquiler, rellena los siguientes campos. En caso de desconocer, o de que no haya información suficiente, responde "E". Para responder sí, di "Y", y para decir no, "N"
+
+Formato de respuesta:
+(id, respuesta campo 1, respuesta campo 2, ...)
+
+Campos:
+1.Nº dormitorios
+2.Nº baños/aseos
+3.Está amueblado
+4.Nº plazas de garaje
+5.Planta
+6.Es exterior
+7.Tiene ascensor
+8.Dirección 
+9.Zona de la ciudad
+10.Ayuntamiento
+11.Incluye trastero
+12.Edificios o lugares destacados cercanos
+13.Tiene piscina (especificar si es compartida/comunitaria o privada):
+14.Tipo de inquilino deseado
+15.Calefacción central
+16.Valoración del 0 al 10 en función de la descripción, siendo 0 malas calidades, poco habitable, etc, y 10 buenas calidades, lujoso, con facilidades, bien ubicado etc. También se puede responder con -1 para indicar falta de información necesaria para hacer la valoración
+
+Pares id-descripciones
+(31122896,"Piso en ronda nelle, 140, Paseo de los Puentes-Santa Margarita, a Coruña",3,100,Piso de lujo en LOS PUENTES Piso de 100m2 exterior 3 planta 3 dormitorios 2 plazas de garaje trastero Vivienda de 100 m2 en Los Puentes calidad lujo exterior seminueva Dispone recibidor con armario empotrado amplio sal n con grandes ventanales 3 habitaciones con armarios empotrados 2 b")
+(101489633,"Piso en calle Posse, 28, Cuatro Caminos - Plaza de la Cubela, a Coruña",3,85,Disponible a partir de 1 de Septiembre Piso reformado con ascensor 3 habitaciones 1 ba o con ducha sal n y cocina independiente con acceso a galer a Fianza 2 meses 1 garant a")
+(102267522,"Piso en Os Mallos, a Coruña",3,90,Alquilase piso 700 tres dormitorios sal n amueblado soleado reformado parquet recibos de comunidad incluidos en el precio situado zona estaci n")
