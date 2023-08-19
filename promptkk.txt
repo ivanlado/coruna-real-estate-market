@@ -1,0 +1,37 @@
+Tu trabajo a partir de ahora será extraer información de un texto. Esta es relativa a viviendas de alquiler en el área metropolitana de A Coruña.
+Yo te daré un lista de información de viviendas identificadas por un id, y tu responderás siguiendo un formato. Es extremadamente importante que tu respuesta incluya solo información siguiendo el formato.
+
+La información a extraer es la siguiente. En caso de que el texto no provea información suficiente o sea desconociza, se responde "E". "Y" para responder sí, y "N" para decir no. Algunos de estos campos no aparecen textualmente en el texto, si no que tienes que deducirlos tu:
+1.Número de baños o aseos.
+2.Número de plazas de garaje.
+3.Dirección.
+4.Zona o barrio de la ciudad.
+5.Edificios o lugares destacados cercanos (estaciones, centro comerciales, calles importantes, playas, monumentos, iglesias, etc.").
+6.Tiene piscina (especificar si es compartida/comunitaria o privada").
+7.Tipo de inquilino deseado (por ejemplo estudiante, familia, pareja, soltero, etc.").
+8.Información sobre alquiler, contrato, fianza, seguro, etc.
+9.Información sobre la calefacción.
+10.Valoración del 0 al 10 en función de la descripción, siendo 0 (malas calidades, poco habitable, mal equipado, mal ubicado, espacios poco amplios, etc) y 10 (buenas calidades, lujoso, con facilidades, espacios amplios, bien equipado, recientemente reformado, bien ubicado, etc.) También se puede responder con -1 para indicar falta de información necesaria para hacer la valoración. Este campo es muy importante, por lo que es conveniente pensarlo bien, y responderlo el mayor número de veces posible.
+
+Formato de respuesta: 
+La respuesta para cada vivienda, debe seguir el siguiente formato.
+(id; respuesta campo 1; respuesta campo 2; ...; respuesta campo 10)
+
+Ejemplo de entrada:
+'''
+(85382815,"Piso en Fernandez Latorre, Cuatro Caminos - Plaza de la Cubela, a Coruña. En este piso se hizo una reforma integral para buscar la luz, el sol, los espacios abiertos y diáfanos. Un gran salón con vistas a Benito Blanco Rajoy nos da la bienvenida a esta excelente vivienda. En el hall un gran vestidor para almacenamiento de abrigos, bolsos y zapatos que proporciona gran com,planta 3ª exterior con ascensor parking")
+(102302864,"Piso en calle Claveles, Someso - Matogrande, a Coruña. Zazume te trae esta cómoda y acogedora vivienda completamente AMUEBLADA, lista para entrar a vivir ya mismo. Contrato de larga estancia ( 12 meses) y NO se aceptan mascotas En Zazume estaremos permanentemente a tu disposición para que tu hogar sea una experiencia inolvidable. Alquila tu casa y")
+'''
+
+Ejemplo de respuesta:
+-----
+(85382815;3;2;Fernandez Latorre, Cuatro Caminos - Plaza de la Cubela, a Coruña;Cuatro Caminos - Plaza de la Cubela;Está a 10 minutos de la estación de tren, vistas a Benito Blanco Rajoy, Está a 5 minutos de la plaza de Lugo;Piscina comunitaria;trabajadores;fianza de 2 meses,comunidad no incluida,seguro incluido;central;8)
+(102302864;E;E;calle Claveles, Someso - Matogrande, a Coruña;Someso - Matogrande;E;E;no se aceptan mascotas;contrato de larga estancia 12 meses, lista para entrar ya misma;E;6)
+-----
+
+
+Estas son las viviendas de las que tienes que extraer la información:
+
+INSERTA AQUÍ LAS VIVIENDAS
+
+En las respuestas no incluyas más texto que las respuestas entre paréntesis, siguiendo el formato. No incluyas introducciones ni aclaraciones.
