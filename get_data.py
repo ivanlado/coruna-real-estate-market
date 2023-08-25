@@ -28,9 +28,8 @@ def normalize_str(x):
     return x
 
 def get_zona(x, zonas, municipios):
-    municipio = x['municipio'].lower()
     titulo = x['titulo'].lower()
-    zona = None
+    municipio = x['municipio'].lower()
     for z in zonas:
         if z in titulo:
             return z
@@ -38,27 +37,10 @@ def get_zona(x, zonas, municipios):
         if '-' in z:
             zn = z.split('-')
             for zi in zn:
+                zi = zi.strip()
                 if zi in titulo:
                     return z
     return municipio
-    
-def get_zona_v2(x, zonas, municipios):
-    titulo = x['titulo'].lower()
-    municipio = x['municipio'].lower()
-    if 'coruña' in municipio or 'oleiros' in municipio:
-        for z in zonas:
-            if z in titulo:
-                return z
-        for z in zonas:
-            if '-' in z:
-                zn = z.split('-')
-                for zi in zn:
-                    zi = zi.strip()
-                    if zi in titulo:
-                        return z
-        return municipio
-    else:
-        return municipio
 
 def get_data_viviendas():
     db = SQLDatabase(user="postgres", password="1111", host="localhost", port="5432", db_name="corunaRealEstateMarket")
@@ -99,7 +81,7 @@ def get_data_model_v1():
     data_municipios, municipios_list = get_data_municipios()
     data_zonas, zonas_list = get_data_zonas()
 
-    data_viviendas['zona'] = data_viviendas.apply(lambda x: get_zona_v2(x, zonas_list, municipios_list), axis=1)
+    data_viviendas['zona'] = data_viviendas.apply(lambda x: get_zona(x, zonas_list, municipios_list), axis=1)
 
     # replace nan coordinates by the coordinates of the municipio
     data_viviendas = data_viviendas.apply(lambda x: function_replace(x, data_municipios), axis=1)
