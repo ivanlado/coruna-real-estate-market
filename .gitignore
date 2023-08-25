@@ -1,6 +1,8 @@
 data/*
 data_filtered/*
 data_raw/*
+bd_sql/*
+almacen/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
