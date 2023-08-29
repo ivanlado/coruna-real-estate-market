@@ -3,6 +3,7 @@ data_filtered/*
 data_raw/*
 bd_sql/*
 almacen/*
+streamlit_app/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
